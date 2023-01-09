@@ -1,10 +1,109 @@
 /* Barre de navigation */
+*{
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+}
+body{
+   color: #000;
+   background-color: indianred;
+}
+
+header{
+   width: 100vw;
+   height: 60vh;
+   max-height: 100px;
+}
+
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+a {
+ text-decoration: none;
+ color: #000;
+ }
+
+ span{
+ text-decoration: none;
+ color: #000;
+}
+
 .navbar{
+   position: absolute;
+   display: flex;
    width: 100%;
-   height: 10%;
-   background color: red;
+   justify-content: space-between;
+   align-items: center ;
+   padding: 10px;
+   box-sizing: border-box;
+}
+
+.navbar ul li{
+   text-transform: uppercase;
+   font-family: Jost;
+   font-weight: 400;
+}
+
+/* animation sous les liens du menus */
+.navbar ul li{
+   padding: 5px;
+   background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0.5px, transparent 1px) no-repeat left bottom / 0 100%;
+   transition: background-size .5s;
+}
+
+.navbar ul li:hover{
+   background-size: 100% 100%;
+}
+
+/* barre de navigation logo */
+
+.logo{
+   width: 20vw;
+}
+
+#navbar-logo{
+   width: 50%;
+   display: block;
+   margin: auto;
+}
+
+/* barre de navigation liens */
+
+.navbar .nav-links ul{
    display: flex;
 }
+
+.navbar .nav-links ul li{
+   margin: 0 25px;
+}
+
+
+
+/* barre de navigation liens secondaires */
+
+.navbar .nav-panier{
+   display: flex;
+   width: 20vw;
+   justify-content: end;
+}
+
+.navbar .nav-panier ul li{
+   margin: 0 25px;
+}
+
+.navbar .nav-panier a{
+   max-width: 5vw;
+}
+
+.navbar .nav-panier img{
+   display: block;
+   width: 30%;
+   margin: auto;
+
+
 
 
 
