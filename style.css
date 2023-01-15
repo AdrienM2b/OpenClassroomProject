@@ -3,16 +3,21 @@
    margin: 0;
    text-decoration: none;
    list-style: none;
+   font-family: Jost;
+    color: white;
 }
+
 body{
-   color: #000;
-   background-color: indianred;
+   /*color: #000;
+   background-color: indianred;*/
 }
 
 header{
    width: 100vw;
-   height: 60vh;
+   height: 15vh;
    max-height: 100px;
+   display: flex;
+   align-items: center;
 }
 
 ul{
@@ -23,13 +28,42 @@ padding: 0;
 
 a {
  text-decoration: none;
- color: #000;
+ color: white;
  }
 
  span{
  text-decoration: none;
- color: #000;
+ color: white;
+ font-weight: 500;
 }
+
+p, h1, h2, h3{
+   font-family: Jost;
+   color: white;
+}
+
+section{
+   width: 100vw;
+   height: 50vw;
+}
+
+h1{
+   text-transform: uppercase;
+   font-size: 50px;
+   font-weight: 700;
+}
+
+h2{
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+p{
+   font-size: 20px;
+}
+
+/*Header*/
 
 .navbar{
    position: absolute;
@@ -39,6 +73,7 @@ a {
    align-items: center ;
    padding: 10px;
    box-sizing: border-box;
+   background-color: transparent;
 }
 
 .navbar ul li{
@@ -50,7 +85,7 @@ a {
 /* animation sous les liens du menus */
 .navbar ul li{
    padding: 5px;
-   background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0.5px, transparent 1px) no-repeat left bottom / 0 100%;
+   background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0.5px, transparent 1px) no-repeat left bottom / 0 100%;
    transition: background-size .5s;
 }
 
@@ -102,8 +137,78 @@ a {
    display: block;
    width: 30%;
    margin: auto;
+}
 
 
+/* SECTIONS */
+
+/* 1 ere section */
+
+#section_one{
+   transition: translate(50%, 50%);
+}
+
+.section_image{
+   height: 100%;
+   background-image: url("/Users/adrienmarchetti/Documents/SCAMBIÀ/Site web/Accueil/polo_blanc_banniere.jpg");
+   background-size: cover;
+   display: grid;
+   grid-template-rows: 10% 90% ;
+}
+
+.titre_section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
 
+/* 2ème section avec le formulaire */
+#section_formulaire{
+   height: 30vw;
+   background-color: #155074;
+}
+
+.formulaire{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   padding: 0 2%;
+}
+
+#title_form{
+   font-size: 25px;
+   margin: 29px;
+}
+
+.register_form{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   width: 65%;
+}
+
+#user_firstname, #user_email{
+   margin-top: 10px;
+   height: 30px;
+   background-color: transparent;
+   border: 1px solid black;   
+}
+
+#submit{
+   margin-top: 30px;
+   padding: 15px 15px;
+   font-size: 15px;
+   text-transform: uppercase;
+   background-color: transparent;
+   border: 2px solid black;
+}
+
+#submit:hover{
+   background-color: white;
+   color: black;
+}
 
